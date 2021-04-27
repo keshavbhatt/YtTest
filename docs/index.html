@@ -21,7 +21,12 @@
     <script type="text/javascript" >
     	const params = new URLSearchParams(document.location.search);
 		const v = params.get("v");
+		const p = params.get("p");
 		var frame = document.getElementById("yt_frame");
-		frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";
+		if (v !== undefined) {
+			frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";			
+		}else if(p != undefined){
+			frame.src = "https://www.youtube.com/embed/videoseries?list="+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";
+		}
     </script>
 </html>
