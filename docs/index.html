@@ -16,12 +16,12 @@
         </style>
     </head>
     <body>
-        <iframe id="yt_frame" allowtransparency="true" style="background: black;"  frameborder="0" data-relstop="1"  class="__youtube_prefs__  no-lazyload" title="YouTube player" allow="autoplay; encrypted-media" allowfullscreen="" data-no-lazy="1" data-skipgform_ajax_framebjll="" name="fitvid0"></iframe>
+        <iframe id="yt_frame" allowtransparency="true" allow="autoplay; encrypted-media" allowfullscreen style="background: black;"  frameborder="0" data-relstop="1"  class="__youtube_prefs__  no-lazyload" title="YouTube player" allow="autoplay; encrypted-media"  data-no-lazy="1" data-skipgform_ajax_framebjll="" name="fitvid0"></iframe>
     </body>
     <script type="text/javascript" >
     	const params = new URLSearchParams(document.location.search);
 		const v = params.get("v");
 		var frame = document.getElementById("yt_frame");
-		frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&amp;autoplay=1&amp;cc_load_policy=0&amp;cc_lang_pref=&amp;iv_load_policy=1&amp;loop=0&amp;modestbranding=1&amp;rel=0&amp;fs=1&amp;playsinline=0&amp;autohide=2&amp;theme=dark&amp;color=red&amp;controls=1&amp;";
+		frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";
     </script>
 </html>
