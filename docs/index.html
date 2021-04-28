@@ -22,12 +22,16 @@
     	var params = new URLSearchParams(document.location.search);
 		var v = params.get("v");
 		var p = params.get("p");
+		var u = params.get("u");
 		var frame = document.getElementById("yt_frame");
 		if (v) {
-			frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";			
+			frame.src = "https://www.youtube.com/embed/"+v+"?enablejsapi=1&autoplay=1&cc_load_policy=0&iv_load_policy=1&loop=0&modestbranding=1&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1";
 		}
 		if(p){
 			frame.src = "https://www.youtube.com/embed/videoseries?list="+p;
+		}
+		if(u){
+			frame.src = "https://www.youtube.com/embed?listType=user_uploads&list="+u;
 		}
     </script>
 </html>
