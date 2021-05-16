@@ -14,22 +14,6 @@
                 height: 100%;
             }
         </style>
-	<script type="text/javascript" src="qrc:///js/qwebchannel.js"></script>
-
-	<script type="text/javascript">
-	    document.addEventListener("DOMContentLoaded", function () {
-		new QWebChannel(qt.webChannelTransport, function (channel) {
-			var jshelper = channel.objects.qt_helper;
-			var e = document.getElementsByTagName('iframe')[0]
-			e.addEventListener('load', function(){
-				var frame = document.querySelector("iframe")
-				var eleArr = frame.contentDocument.querySelectorAll('[href*=\"youtube/answer/2802167\"]');
-				jshelper.onHovered(eleArr.length);
-				console.log(eleArr);
-			});
-		});
-	    });
-	</script>
     </head>
     <body>
         <iframe id="yt_frame" allowtransparency="true" modestbranding="1"  rel="0" 
